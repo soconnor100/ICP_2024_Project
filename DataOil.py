@@ -15,10 +15,10 @@ for i in range(len(price)):
 n = 12
 yearly_price = [sum(price[i:i+n])/n for i in range(0, len(price), n)]  #finds yearly average price
 
-print(yearly_price)
-print(len(yearly_price))
+#print(yearly_price)
+#print(len(yearly_price))
 
-#print(year)
-#print(price)
+print(year)
+print(price)
 
 
