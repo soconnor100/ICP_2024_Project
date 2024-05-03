@@ -1,4 +1,6 @@
-Have you ever been frustrated at the price of gas? Cars are an integral part of most people’s lives, especially in the United States, so it makes sense that people feel strongly about the price of gas. Gas is not the only product affected by the price of crude oil, but it is the one that most people probably think of when they hear “crude oil.” Crude oil is one of the most important commodities in modern society and its price is tied to a large number of factors. Oil is collected from many locations around the world and whenever major events happen in these locations, it can shift oil production rates which in turn affects the price of oil. This report will explain how this crude oil price data was collected, what it actually means, how it can be visualized, and how trends in the data can be explained by real-world events with a specific example.
+The original data used in this report was the monthly price of crude oil per barrel from 1979 to 2023. It was from the U.S Energy Information Administration. \cite{EIA_2024} In its original state it was interesting but was such a large amount of data that it was condensed before getting plotted. This was done by first uploading a text file copy of the information to a WSL directory. From there it was read with “open()” and “readlines()” commands. From there, the information on lines could be split and put into two lists, one for years and one for prices. To further analyze the price data, another step had to be taken because its base state it was just regarded as strings by python which cannot be treated as normal numbers.\\
+	\newline The price list containing strings was modified with a for loop to change it into a list of floats. This newly modified list was then separated every 12 values to find the yearly price averages. These yearly price averages were put into a new list which was then graphed. \\
+
 
 
 \begin{figure}
@@ -6,7 +8,9 @@ Have you ever been frustrated at the price of gas? Cars are an integral part of 
   \includegraphics[width=1.0\textwidth]{OilPrice1.png}
   \caption{This is the graph of average Crude oil barrel prices. It was made using the modified lists of data and pylab}
  
-  \label{fig:AverageOilPricePlot}
+  \label{fig:PricePlot}
 \end{figure}
 
-
+ Figure \ref{fig:PricePlot} was made by taking the yearly price averages and putting them in for 
+the y values of the plot. The x values were taken from the year list that was made from the original plain text file.
+This was done using pylab. Effective Computation in Physics was helpful for doing this. \cite{ECP_2015}
