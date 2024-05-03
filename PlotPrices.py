@@ -27,7 +27,10 @@ plt.plot(years, yearly_price)    #adds the years list and yearly price list to t
 
 plt.xlabel('Year (From 1974-2023)', fontsize = 20)
 plt.ylabel('Price (in U.S Dollars)', fontsize = 20)
-plt.title('Average Yearly price of Crude Oil Barrel from 1974-2023', fontsize = 30)
+
+plt.yticks(fontsize = 18)
+plt.xticks(fontsize = 18)
+plt.title('Average Yearly Price of Crude Oil Barrel from 1974-2023', fontsize = 30)
 plt.grid(True)    #just adds the grid to the background which makes it easier to see
 
 plt.savefig("OilPrice1.png")

@@ -1,4 +1,5 @@
-﻿Year
+﻿This is data descriving the price of oil per barrel in U.S. dollars. It is separated by month and year and ranges from 1974-2023
+Year
 -Jan
 -Feb
 -Mar
